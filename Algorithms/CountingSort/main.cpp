@@ -28,9 +28,10 @@ int main(){
     }
 
     int sortedArray[n];
+    int k = 0; 
     for(int i = 0; i < length; i++){
         for(int j = 0; j < freqArray[i]; j++){
-            sortedArray[i + j] = i + min;
+            sortedArray[k++] = i + min;
         }
     }
 
